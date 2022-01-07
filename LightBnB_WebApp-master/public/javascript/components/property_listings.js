@@ -21,6 +21,7 @@ $(() => {
     clearListings();
     for (const propertyId in properties) {
       const property = properties[propertyId];
+      console.log(property);
       const listing = propertyListing.createListing(property, isReservation);
       addListing(listing);
     }
